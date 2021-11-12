@@ -104,10 +104,7 @@ app.use(
                 "data:",
                 "https://res.cloudinary.com/dnuompa9x/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
                 "https://images.unsplash.com/",
-                "https://cdn-icons.flaticon.com/",
                 "https://media.istockphoto.com/",
-                "https://www.freepik.com/",
-                "https://www.flaticon.com/",
                 "https://cdn-icons-png.flaticon.com/"
             ],
             fontSrc: ["'self'", ...fontSrcUrls],

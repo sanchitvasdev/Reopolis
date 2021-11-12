@@ -1,0 +1,77 @@
+body{
+    background-color: #FAEEE0;
+}
+.navbar{
+    background-color: #f0ee89;
+}
+
+.footer{
+    background-color: #f0ee89;
+    color: #39A388;
+}
+
+.nav-link{
+    color: #39A388;
+}
+
+.nav-link.active{
+    color: #1C7947;
+    font-weight: 500;
+}
+
+.nav-link:hover,.navbar-brand:hover{
+    color: #1C7947;
+}
+
+.navbar-brand{
+    font-size: x-large;
+    color: #1C7947;
+}
+
+.navbar-toggler{
+    border-color: #39A388;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(57,163,136,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+#searchBtn{
+    background-color: #2C2891;
+    color: #FEF1E6;
+}
+
+#searchInput{
+    color: #2C2891;
+}
+
+#addApart{
+    background-color: #77D970;
+    color: black;
+}
+
+#addApart:hover{
+    background-color: #6fcc68;
+}
+
+#btnStyle{
+    background-color: #2C2891;
+    color: #FEF1E6;
+}
+
+#btnStyle:hover,#searchBtn:hover{
+    background-color: #232073;
+} 
+
+#backBtn{
+    background-color: #A9E4D7;
+    color: #4B3869;
+}
+
+#backBtn:hover{
+    background-color: #9dd1c5;
+}
+
+#locationLink{
+    text-decoration: none;
+}

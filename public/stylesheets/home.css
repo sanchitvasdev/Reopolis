@@ -1,0 +1,36 @@
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://media.istockphoto.com/photos/modern-middleclass-neighborhood-architecture-in-miami-florida-usa-picture-id1281278515?b=1&k=20&m=1281278515&s=170667a&w=0&h=2kQbWVY73_P8sL_b0yAqPnvIN-O3ApJ6vovLCFzwnFg=");
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 5rem rgba(0,0,0,0.5);
+}
+
+.cover-container{
+    max-width: 60vw;
+}
+
+.nav-link{
+    padding: 0.25rem 0;
+    font-weight: 700;
+    color: rgba(254, 241, 230, 0.7); /*#50deba*/
+    margin-left: 1rem;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover{
+    color: rgba(254, 241, 230, 0.7);
+    border-bottom-color: rgba(254, 241, 230, 0.7);
+}
+
+.nav-link.active{
+    color: rgba(254, 241, 230, 0.7);
+    border-bottom-color: rgba(254, 241, 230, 0.7);
+}
+
+#heading{
+    color: rgba(254, 241, 230, 0.7);
+}
+

@@ -1,0 +1,44 @@
+<% layout('layouts/boilerplate') %>
+    <div class="d-flex justify-content-end mb-3">
+        <h1 class="d-inline-block me-auto">All apartments</h1>
+        <a href="/apartments/new" class="btn shadow rounded" id="addApart">Add an
+            apartment</a>
+    </div>
+    <% if(apartments.length!=0){ %>
+        <% for (let apartment of apartments){ %>
+            <div class="card mb-3">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src=<%=apartment.images[0].url%>
+                        alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= apartment.title %>
+                            </h5>
+                            <p class="card-text">
+                                <%= apartment.description %>
+                            </p>
+                            <p>
+                                <a class="card-text text-muted" id="locationLink"
+                                    href="<%=`https://www.google.com/maps/place/${apartment.location}`%>"
+                                    target="_blank">
+                                    📌<%=apartment.location %>
+                                </a>
+                            </p>
+                            <a class="btn shadow rounded" id="btnStyle" href="/apartments/<%= apartment._id %> ">View
+                                <%= apartment.title %>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+                <% }else{ %>
+                    <div class="text-center mt-5">
+                        <img src="https://cdn-icons.flaticon.com/png/512/1895/premium/1895100.png?token=exp=1636726177~hmac=169cffccac295a73bb0e3cf490e44250"
+                            alt="" style="height: 5em" class="mb-3">
+                        <h2>No apartment(s) available</h2>
+                    </div>
+                    <% } %>

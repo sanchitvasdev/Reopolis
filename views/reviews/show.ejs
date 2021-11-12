@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheets/stars.css">
+    <h1 class="d-flex justify-content-center">Reviews</h1>
+    <div class="row">
+        <div class="col-6 offset-3">
+            <% for(let review of reviews){ %>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <p class="starability-result" data-rating="<%=review.rating%>">
+                            Rated <%=review.rating%> stars
+                        </p>
+                        <h6 class="card-text mb-3">
+                            Review: <%=review.text%>
+                        </h6>
+                        <h6 class="card-subtitle mb-3 text-muted">
+                            By <%=review.author.username%>
+                        </h6>
+                        <% if(currentUser && review.author.equals(currentUser._id)){ %>
+                            <form action="/apartments/<%=apartment._id%>/reviews/<%=review._id%>?_method=DELETE"
+                                method="POST">
+                                <button class="btn btn-sm btn-danger shadow rounded">Delete</button>
+                            </form>
+                            <% } %>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>

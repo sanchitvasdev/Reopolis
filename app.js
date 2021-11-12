@@ -60,7 +60,7 @@ store.on("error", function (e) {
 const sessionConfig = {
     store,
     name: 'reo',
-    secret: 'thisshouldbeabettersecret!',
+    secret,
     resave: false,
     saveUninitialized: true,
     cookie: {

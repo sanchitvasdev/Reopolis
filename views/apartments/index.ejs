@@ -9,8 +9,12 @@
             <div class="card mb-3">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src=<%=apartment.images[0].url%>
-                        alt="" class="img-fluid">
+                        <% if(campground.images.length){ %>
+                            <img src=<%=apartment.images[0].url%> alt="" class="img-fluid">
+                            <%}else{%>
+                                <img src="https://res.cloudinary.com/dnuompa9x/image/upload/v1634135516/Reopolis/god02duj1uxirrnc6rds.jpg"
+                                    alt="" class="img-fluid">
+                                <%}%>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
